@@ -29,6 +29,10 @@ class _CustomersProfileState extends State<CustomersProfile> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    Future.delayed(
+      Duration(seconds: 1),
+      () => getUser(),
+    );
   }
 
   UserModels? user = UserModels();
